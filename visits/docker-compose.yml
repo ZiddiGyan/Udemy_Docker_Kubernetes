@@ -1,0 +1,12 @@
+# Required line
+version: '3'
+
+# services is kind of equivalent to container
+services: 
+  redis-server:
+    image: 'redis'
+  node:app:
+    build: .
+    ports: 
+      - "8081:8081"
+      
